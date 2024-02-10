@@ -66,7 +66,7 @@ nav img{
 }
 
 .text-box h1 {
-    font-size: 69px;
+    font-size: 61px;
 }
 
 text-box p{
@@ -114,7 +114,7 @@ nav .fa{
         text-align: left;
         z-index: 2;
     }
-    
+
 nav .fa{
     display: block;
     color: white;
