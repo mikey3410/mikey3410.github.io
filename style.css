@@ -1,17 +1,23 @@
+/* Default margin, padding, anad font*/ 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Rajdhani', sans-serif;
 }
+/* Header styles*/
+
+
 .header{
     min-height: 100vh;
     width: 100%;
+    /*Background with gradient*/ 
     background-image: linear-gradient(rgba(4,9,30,0.7),
      rgba(4,9,30,0.7)), url(images/IMG_0505.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
+ /*Nav style*/ 
 
 nav{
     display: flex;
@@ -23,7 +29,7 @@ nav img{
     width: 140px;
 
 }
-
+ /*Nav link style*/ 
 .nav-links{
     flex: 1;
     text-align: right;
@@ -54,7 +60,8 @@ nav img{
 .nav-links ul li:hover::after {
     width: 100% 
 }
-
+ 
+/*Text box style*/ 
 .text-box{
     width: 90;
     color: white;
@@ -74,7 +81,7 @@ nav img{
     font-size: 26px;
     color: white;
 }
-
+/*Button style*/ 
 .click-btn{
     display: inline-block;
     text-decoration: none;
@@ -96,7 +103,7 @@ nav img{
 nav .fa {
     display: none;
 }
-
+/*Media for phones */ 
 @media(max-width: 700px) {
     .text-box h1 {
         font-size: 24px;
@@ -144,7 +151,7 @@ p{
     display: flex;
     justify-content: space-between;
 }
-
+/*Column styles for about me section */ 
 .aboutme-col{
     flex-basis: 31%;
     background: #fff3f3;
@@ -159,7 +166,7 @@ h3{
     font-weight: 600;
     margin: 10px 0;
 }
-
+/*hover effect*/ 
 .aboutme-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
@@ -209,18 +216,18 @@ h3{
 .golf-col p{
     padding: 15px 0 25px;
 } 
-
+/*Button style*/ 
 .m-btn{
     border: 1px solid maroon;
     background: transparent;
     color: maroon;
 }
-
+/*hover effect*/ 
 .m-btn:hover{
     color: white;
 }
 
-/*-----resume------*/
+/*-----Contact------*/
 
 .subb-header{
     height: 50vh;
@@ -264,7 +271,7 @@ h3{
     background: transparent;
     color: maroon;
 }
-
+/*hover effect*/ 
 .m-btn:hover{
     color: white;
 }
@@ -308,6 +315,7 @@ h3{
 .travel-col p{
     padding: 15px 0 25px;
 } 
+/*Button style*/ 
 .m-btn{
     border: 1px solid maroon;
     background: transparent;
@@ -365,7 +373,7 @@ h3{
     background: transparent;
     color: maroon;
 }
-
+/*Button style*/ 
 .m-btn:hover{
     color: white;
 }
