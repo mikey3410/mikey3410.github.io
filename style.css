@@ -1,47 +1,52 @@
-*{
+
+/* Resetting default margin, padding, and font */
+* {
     margin: 0;
     padding: 0;
     font-family: 'Rajdhani', sans-serif;
 }
-.header{
+
+/* Header Styles */
+/* Header section */
+.header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),
-     rgba(4,9,30,0.7)), url(images/IMG_0505.jpg);
+    /* Background with gradient overlay and image */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/IMG_0505.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-nav{
+/* Navigation Styles */
+/* Flexbox layout for nav*/
+nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
-nav img{
+nav img {
     width: 140px;
-
 }
 
-.nav-links{
+/* Nav links styles */
+.nav-links {
     flex: 1;
     text-align: right;
 }
-
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-
 }
-.nav-links ul li a{
+.nav-links ul li a {
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
-.nav-links ul li::after{
+.nav-links ul li::after {
     content: ' ';
     width: 0%;
     height: 2px;
@@ -50,12 +55,12 @@ nav img{
     margin: auto;
     transition: 0.75s;
 }
-
 .nav-links ul li:hover::after {
-    width: 100% 
+    width: 100%;
 }
 
-.text-box{
+/* Text box styles */
+.text-box {
     width: 90;
     color: white;
     position: absolute;
@@ -64,18 +69,17 @@ nav img{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
 .text-box h1 {
     font-size: 61px;
 }
-
-.text-box p{
+.text-box p {
     margin: 10px 0 40px;
     font-size: 26px;
     color: white;
 }
 
-.click-btn{
+/* Button styles */
+.click-btn {
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -86,25 +90,21 @@ nav img{
     position: relative;
     cursor: pointer;
 }
-
-.click-btn:hover{
+.click-btn:hover {
     border: 1px solid maroon;
-    background:maroon; 
+    background: maroon;
     transition: 1s;
 }
 
-nav .fa {
-    display: none;
-}
-
+/* Media query for phones */
 @media(max-width: 700px) {
     .text-box h1 {
         font-size: 24px;
     }
-    .nav-links ul li{
+    .nav-links ul li {
         display: block;
     }
-    .nav-links{
+    .nav-links {
         position: absolute;
         background: maroon;
         height: 100vh;
@@ -116,268 +116,211 @@ nav .fa {
     }
 }
 
-/*------about me -----*/ 
-
+/* About Me Section Styles */
 .aboutme {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
-
-h1 {
+/* About me section title */
+.aboutme h1 {
     font-size: 40px;
     font-weight: 600;
 }
-
-p{
-    
+/* About me section paragraph */
+.aboutme p {
     color: black;
     font-size: 20px;
     font-weight: 300;
     line-height: 22px;
-    padding: 10px; 
+    padding: 10px;
 }
-
-.row{
+/* Row layout for about me section */
+.row {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
-
-.aboutme-col{
+/* Column styles for about me section */
+.aboutme-col {
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     transition: 0.5s;
 }
-h3{
+/* About me column title */
+.aboutme-col h3 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
-
-.aboutme-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+/* Hover effect for about me column */
+.aboutme-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media(max-width: 700px) {
-    .row{
-        flex-direction: column;
-    }
-}
-
-/*------golf-------*/
-
-.sub-header{
+/* Golf Section Styles */
+/* Sub-header styles for golf section */
+.sub-header {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/augustaNational.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/augustaNational.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
     color: white;
 }
-
-.sub-header h1{
-    margin-top: 100px;  
+.sub-header h1 {
+    margin-top: 100px;
 }
 
-.golf{
+/* Golf section container */
+.golf {
     width: 80%;
     margin: auto;
     padding-top: 80px;
     padding-bottom: 50px;
 }
-
-.golf-col{
+/* Row layout for golf section */
+.golf .row {
+    display: flex;
+    justify-content: space-between;
+}
+/* Golf column styles */
+.golf-col {
     flex-basis: 48%;
     padding: 30px 2px;
 }
-
-.golf-col img{
+/* Golf column image */
+.golf-col img {
     width: 100%;
 }
-
-.golf-col h1{
+/* Golf column title */
+.golf-col h1 {
     padding-top: 0;
 }
-
-.golf-col p{
+/* Golf column paragraph */
+.golf-col p {
     padding: 15px 0 25px;
-} 
-
-.m-btn{
-    border: 1px solid maroon;
-    background: transparent;
-    color: maroon;
 }
 
-.m-btn:hover{
-    color: white;
-}
-
-/*-----resume------*/
-
-.subb-header{
+/* Resume Section Styles */
+.subb-header {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/thumbnail_IMG_0855.jpg); 
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/thumbnail_IMG_0855.jpg);
     background-size: cover;
     text-align: center;
     color: white;
 }
-
-.subb-header h1{
-    margin-top: 100px; 
+.subb-header h1 {
+    margin-top: 100px;
 }
 
-.contact{
+/* Contact Section Styles */
+/* Contact section container */
+.contact {
     width: 80%;
     margin: auto;
     padding-top: 80px;
     padding-bottom: 50px;
 }
-
-.contact-col{
+/* Contact section row layout */
+.contact .row {
+    display: flex;
+    justify-content: space-between;
+}
+/* Contact column styles */
+.contact-col {
     flex-basis: 48%;
     padding: 30px 2px;
 }
-
-.contact-col img{
+/* Contact column image */
+.contact-col img {
     width: 100%;
 }
-
-.contact-col h1{
+/* Contact column title */
+.contact-col h1 {
     padding-top: 0;
 }
-
-.contact-col p{
+/* Contact column paragraph */
+.contact-col p {
     padding: 15px 0 25px;
-} 
-
-.m-btn{
-    border: 1px solid maroon;
-    background: transparent;
-    color: maroon;
 }
 
-.m-btn:hover{
-    color: white;
-}
-
-/*------travel-------*/ 
-
-.travel-header{
-    height: 50vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/IMG_0743.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: white;
-}
-
-.travel-header h1{
-    margin-top: 100px; 
-}
-
-.travel{
+/* Travel Section Styles */
+/* Travel section container */
+.travel {
     width: 80%;
     margin: auto;
     padding-top: 80px;
     padding-bottom: 50px;
 }
-
-.travel-col{
+/* Travel section row layout */
+.travel .row {
+    display: flex;
+    justify-content: space-between;
+}
+/* Travel column styles */
+.travel-col {
     flex-basis: 48%;
     padding: 30px 2px;
 }
-
-.travel-col img{
+/* Travel column image */
+.travel-col img {
     width: 100%;
 }
-
-.travel-col h1{
+/* Travel column title */
+.travel-col h1 {
     padding-top: 0;
 }
-
-.travel-col p{
+/* Travel column paragraph */
+.travel-col p {
     padding: 15px 0 25px;
-} 
-.m-btn{
-    border: 1px solid maroon;
-    background: transparent;
-    color: maroon;
 }
 
-.m-btn:hover{
-    color: white;
-}
-
-
-
-/*------------camping --------*/ 
-
-.camping-header{
-    height: 50vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/aspen-trees-wallpaper-l.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: white;
-}
-
-.camping-header h1{
-    margin-top: 100px; 
-}
-
-.camping{
+/* Camping Section Styles */
+.camping {
     width: 80%;
     margin: auto;
     padding-top: 80px;
     padding-bottom: 50px;
 }
-
-.camping-col{
+/* Camping section row layout */
+.camping .row {
+    display: flex;
+    justify-content: space-between;
+}
+/* Camping column styles */
+.camping-col {
     flex-basis: 48%;
     padding: 30px 2px;
 }
-
-.camping-col img{
+/* Camping column image */
+.camping-col img {
     width: 100%;
 }
-
-.camping-col h1{
+/* Camping column title */
+.camping-col h1 {
     padding-top: 0;
 }
-
-.camping-col p{
+/* Camping column paragraph */
+.camping-col p {
     padding: 15px 0 25px;
-} 
-
-.m-btn{
-    border: 1px solid maroon;
-    background: transparent;
-    color: maroon;
 }
 
-.m-btn:hover{
-    color: white;
-}
-
-/*-----footer-------*/
-
-.footer{
+/* Footer Styles */
+/* Footer section with center-aligned text and padding */
+.footer {
     width: 100%;
     text-align: center;
     padding: 30px 0;
 }
-.footer h4{
+.footer h4 {
     margin-bottom: 23px;
     margin-top: 18px;
     font-weight: 600;
