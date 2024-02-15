@@ -183,7 +183,7 @@ h3{
 }
 
 .sub-header h1{
-    margin-top: 100px; 
+    margin-top: 100px;  
 }
 
 .golf{
@@ -225,8 +225,7 @@ h3{
 .subb-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/IMG_0743.jpg);
-    background-position: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/thumbnail_IMG_0855.jpg); 
     background-size: cover;
     text-align: center;
     color: white;
@@ -268,4 +267,118 @@ h3{
 
 .m-btn:hover{
     color: white;
+}
+
+/*------travel-------*/ 
+
+.travel-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/IMG_0743.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.travel-header h1{
+    margin-top: 100px; 
+}
+
+.travel{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.travel-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.travel-col img{
+    width: 100%;
+}
+
+.travel-col h1{
+    padding-top: 0;
+}
+
+.travel-col p{
+    padding: 15px 0 25px;
+} 
+.m-btn{
+    border: 1px solid maroon;
+    background: transparent;
+    color: maroon;
+}
+
+.m-btn:hover{
+    color: white;
+}
+
+
+
+/*------------camping --------*/ 
+
+.camping-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/aspen-trees-wallpaper-l.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.camping-header h1{
+    margin-top: 100px; 
+}
+
+.camping{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.camping-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.camping-col img{
+    width: 100%;
+}
+
+.camping-col h1{
+    padding-top: 0;
+}
+
+.camping-col p{
+    padding: 15px 0 25px;
+} 
+
+.m-btn{
+    border: 1px solid maroon;
+    background: transparent;
+    color: maroon;
+}
+
+.m-btn:hover{
+    color: white;
+}
+
+/*-----footer-------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 23px;
+    margin-top: 18px;
+    font-weight: 600;
 }
